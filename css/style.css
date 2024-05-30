@@ -389,7 +389,7 @@ i.fas.fa-chevron-up.show-more-icon{
   border-radius: 5px;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 
 .open-popup-btn:hover {
@@ -530,7 +530,7 @@ ul.navbar-nav.mt-4{
 /* ------------------------  search css code start here------------------------   */
 .search-container {
   margin: 20px auto;
-  max-width: 400px;
+  max-width: 500px;
   text-align: center;
   position: relative;
 }
@@ -912,7 +912,6 @@ img.send-search {
 
 /*------------------------  login and signup popup end here------------------------   */
 /*------------------------  boyd page center text css start here------------------------   */
-
 .main-span {
   text-align: center;
   width: 80%;
@@ -1025,140 +1024,156 @@ img.send-search {
   margin-right: 7.5rem;
 }
 
+.bottom-center {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.col-text2 {
+  margin-top: -1.2rem;
+}
+
+.col-text3 {
+  margin-top: -1rem;
+}
+
+.col-text4 {
+  margin-top: -1rem;
+}
+
 @media (max-width: 768px) {
   .main-span {
-      width: 90%;
+    width: 90%;
   }
 
   .big {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .part3 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .part4 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .part4_1 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .part5 {
-      font-size: 35px;
+    font-size: 35px;
   }
 
   .part6 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .part6 span {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .additional-text {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .bedtime {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .sleep {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .suicidal {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .workout {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .biryani span {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .routing span {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .scratch {
-      font-size: 18px;
-      margin-right: 7.5rem;
+    font-size: 18px;
+    margin-right: 7.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .main-span {
-      width: 90%;
+    width: 90%;
   }
 
   .big {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .part3 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .part4 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .part4_1 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .part5 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .part6 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .part6 span {
-      font-size: 26px;
+    font-size: 26px;
   }
 
   .additional-text {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .bedtime {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .sleep {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .suicidal {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .workout {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .biryani span {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .routing span {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .scratch {
-      font-size: 16px;
-      margin-right: 7.5rem;
+    font-size: 16px;
+    margin-right: 7.5rem;
   }
 }
-
 /* ------------------------ body page cnter text css end here ------------------------  */
 /* ------------------------ preloader code start here ------------------------ */
 
