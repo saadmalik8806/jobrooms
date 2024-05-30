@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jobrooms | Home</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Include Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/short-icon.png" />
+</head>
+
+<body>
+ <!-- Preloader HTML -->
+ <!-- <div class="preloader-wrapper">
+  <div class="loader">
+      <div></div>
+      <div></div>
+  </div>
+</div> -->
+
+  <!-- Overlay background -->
+  <div class="unique-overlay-bg" id="uniqueOverlay"></div>
+  <!-- Popup container -->
+  <div class="unique-popup-container" style="z-index:999;" id="uniquePopup">
+    <!-- <img src="images/astronaut-WTFWARES.png" alt="Astronaut" class="unique-img-astronaut"> -->
+
+    <div class="unique-popup-content" style="margin-top: 2.5rem;">
+      <div class="unique-top-center-icon">
+        <img src="images/error_5073775.png" alt="Icon">
+      </div>
+      <p>THIS PRODUCT IS PROTECTED BY A ROBUST INTELLECTUAL PROPERTY PORTFOLIO, ENCOMPASSING PENDING PATENTS AND
+        OTHER EXCLUSIVE RIGHTS.</p>
+    </div>
+    <div class="unique-action-btn-container">
+      <button class="btn-unique-github" id="uniqueContinueBtn">
+        CONTINUE TO SITE
+      </button>
+    </div>
+  </div>
+  <!-- first popup end here  -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Popup container -->
+
+  <!-- Popup container -->
+  <div class="popup" id="popup">
+    <button class="close-btn" id="closePopupBtn">&times;</button>
+    <div class="content" style="margin-top: 2.5rem;">
+      <p>Please create a free account or log in to your existing one to access this feature.</p>
+    </div>
+    <div class="buttons-container">
+      <a href="#" class="open-popup-btn" id="signUpBtn">Sign Up</a>
+      <div class="separator"></div>
+      <a href="#" class="open-popup-btn" id="loginBtn">Login</a>
+    </div>
+  </div>
+   
+
+
+
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas-collapse" id="navbarNav">
+    <div class="d-flex justify-content-center mt-4">
+      <img src="images/Jobrooms-New-Logo-Without-R.png" alt="Jobrooms" height="50">
+    </div>
+  </div>
+  <div class="menu-overlay"></div>
+  <div class="offcanvas-collapse" id="navbarNav">
+      <div class="close-icon-wrapper">
+          <i class="fas fa-bars"></i>
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+          <img src="images/Jobrooms-New-Logo-Without-R.png" width="100" height="40" alt="Jobrooms" height="50">
+      </div>
+      <div class="sidebar-content">
+          <ul class="navbar-nav mt-4">
+              <!-- Navbar Items -->
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="images/Home.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Home </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Panic.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Panic </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Search-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Search </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Work-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Work </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Shop-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Shop</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Hire-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Hire</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Shopping-bag-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Sell</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/top-up.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Top-up</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Balance-r2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Balance</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/CallHistory-r2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Call History</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/About.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Investors-2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Investors</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Newsroom-2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Newsroom</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Faqs.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> FAQs</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/ContactUs.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/RefundPolicy.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Refund Policy</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/PricacyPolicy.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/TermsOfUse.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Terms Of Use</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/ModernSlaveryStatement-2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Modern Slavery Statement</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Login.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Signup.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Signup</a>
+              </li>
+              <li id="showMoreBtn">
+                  <a class="nav-link"><i class="fas fa-chevron-down show-more-icon"></i>Show more</a>
+              </li>
+          </ul>
+          <!-- New Icon and Text -->
+          <div class="mt-4 mb-4 ml-3">
+            <div class="additional-info">
+              <img src="images/globe--v1.png" alt="Additional Icon" class="icon">
+              <span style="color: #1a1666;">English (UK)</span>
+          </div>
+          <div class="additional-info">
+              <img src="images/sun.png" alt="Additional Icon" class="icon">
+              <span style="color: #1a1666;">Light Mode</span>
+          </div>
+          <div class="additional-info">
+            <img src="images/download.png" alt="Additional Icon" class="icon">
+            <span style="color: #1a1666;">Conversation Royalties</span>
+        </div>
+          <div class="additional-info">
+              <span style="color: #888;">United Kingdom<br>
+                  ©2024 – Jobrooms<br>
+                  All Right Reserved</span>
+          </div>
+          </div>
+         
+      </div>
+      <!-- Follow Us Section -->
+      <div class="follow-us">
+          <p class="follow ml-4" style="text-align: left;">Follow Us</p>
+          <div class="follow-us-icons">
+              <img src="images/facebook.png" alt="Facebook" class="icon">
+              <img src="images/snap.png" alt="Instagram" class="icon">
+              <img src="images/twitter.png" alt="Twitter" class="icon">
+              <img src="images/linkdin.png" alt="LinkedIn" class="icon">
+              <img src="images/youtube.png" alt="YouTube" class="icon">
+              <img src="images/github-logo.png" alt="GitHub" class="icon">
+          </div>
+      </div>
+  </div>
+  <!-- Logo -->
+  <div class="container d-flex justify-content-center mt-4">
+      <img src="images/Jobrooms-New-Logo-Without-R.png" alt="Jobrooms" height="88">
+  </div>
+  <!-- Navbar start here -->
+  <nav class="navbar">
+      <div class="d-flex align-items-center w-100">
+          <!-- Hamburger Icon -->
+          <button class="navbar-toggler menu-link-wrapper" type="button" data-toggle="offcanvas" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <div class="menu-link">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </button>
+          <!-- Profile and Notification Icons -->
+          <div class="ml-auto navbar-icons">
+              <span class="icon bell-icon nav-item"><img src="images/active.png" alt="Notification Icon"></span>
+              <span class="icon user-icon nav-item"><img src="images/profile-user.png" alt="User Icon"></span>
+          </div>
+      </div>
+  </nav>
+
+
+  <div class="section text-center">
+    <div class="container">
+      <div class="row justify-content-center search-container">
+        <div class="search-container">
+          <div class="search-bar">
+              <img id="logoIcon"
+                  class="logo-search"
+                  src="images/logo.png"
+                  alt="Logo">
+              <div id="placeholderText"
+                  class="placeholder-text">Get
+                  help on anything</div>
+              <textarea id="searchInput"
+                  oninput="adjustInputHeight(); toggleIcons(); togglePlaceholder(); expandTextarea();"
+                  onfocus="expandTextarea(); hideSettingsIcon(); toggleLogo();"
+                  onblur="shrinkTextarea(); toggleLogo(); togglePlaceholder(); showSettingsIcon();"></textarea>
+              <img id="micIcon" class="mic-search"
+                  src="images/Group 118.png"
+                  alt="Mic"
+                  onclick="startSpeechRecognition()">
+              <img id="settingsIcon"
+                  src="images/Group 864.png"
+                  alt="Settings">
+              <img id="sendIcon"
+                  class="send-search nav-item"
+                  src="images/Group 117.png"
+                  alt="Send">
+          </div>
+      </div>
+
+
+
+      </div>
+      <div class="row justify-content-center mt-3">
+        <h2 class="text-center" style="color:#B7B8BC; font-size: 1.5rem;"> Hello
+          there, you can ask things like..</h2>
+        <div class="main-span">
+          <span class="red">I want to learn</span>
+          <span class="big">how to drive</span>
+          <span class="part3">, where do i start?</span>
+          <span class="part4">How do I file my</span>
+          <span class="part4_1">taxes?</span><br>
+          <span class="part5">My drainage</span>
+          <span class="part6">help me create a
+            <span>spreadsheet </span> to track my
+            budget</span><br>
+          <span class="additional-text">is blocked, what
+            should i do?</span>
+          <span class="bedtime">Can you tell me a bedtime
+            story that will lull you to <span class="sleep">Sleep?</span><br></span>
+          <span class="computer">My HP Computer won't
+            start,</span>
+          <span class="depressed">I'm feeling depressed
+            and having <span class="suicidal"> suicidal
+              thoughts,</span> can you
+            help?</span><br>
+          <span class="red">what's wrong?</span>
+          <span class="workout">what's the best
+            workout</span>
+          <span class="biryani">How do i cook
+            delicious<span>chicken
+              biryani</span><br></span>
+          <span class="routing">routing for me to
+            <span>build muscle?</span></span>
+          <span class="scratch">from scratch?</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!-- Footer line -->
+<div class="footer-line">
+  This Product Is Protected By A Robust Intellectual Property Portfolio Encompassing Pending Patents And Other Exclusive Rights.
+</div>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+        $('.menu-link-wrapper').on('click', function () {
+            $('.menu-link').toggleClass('menu-trigger-open');
+            $('.offcanvas-collapse').toggleClass('open');
+            $('.menu-overlay').toggle();
+        });
+        $('.menu-overlay, .fa-times').on('click', function () {
+            $('.offcanvas-collapse').removeClass('open');
+            $('.menu-link').removeClass('menu-trigger-open');
+            $('.menu-overlay').hide();
+        });
+
+        var $navItems = $('.navbar-nav .nav-item');
+        var $showMoreBtn = $('#showMoreBtn');
+        var numToShow = 5;
+
+        $navItems.slice(numToShow, -1).hide();
+
+        $showMoreBtn.on('click', function () {
+            var isShowingMore = $navItems.slice(numToShow, -1).is(':visible');
+            $navItems.slice(numToShow, -1).toggle();
+            $showMoreBtn.find('a').html(isShowingMore ? '<i class="fas fa-chevron-down show-more-icon"></i>Show more' : '<i class="fas fa-chevron-up show-more-icon"></i>Show less');
+            if (!isShowingMore) {
+                $('html, body').animate({
+                    scrollTop: $showMoreBtn.offset().top
+                }, 500);
+            }
+        });
+
+        $navItems.on('click', function () {
+            $navItems.removeClass('hover-effect');
+            $(this).addClass('hover-effect');
+        });
+    });
+</script>
+
+
+<script>
+ function adjustInputHeight() {
+    var input = document.getElementById('searchInput');
+    input.style.height = 'auto';
+    input.style.height = (input.scrollHeight) + 'px';
+}
+
+function startSpeechRecognition() {
+    var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+    var recognition = new SpeechRecognition();
+    recognition.lang = 'en-US';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.start();
+
+    recognition.onresult = function (event) {
+        var transcript = event.results[0][0].transcript;
+        document.getElementById('searchInput').value = transcript;
+        adjustInputHeight();
+        toggleIcons();
+        togglePlaceholder();
+        expandTextarea();
+    };
+
+    recognition.onspeechend = function () {
+        recognition.stop();
+    };
+
+    recognition.onerror = function (event) {
+        console.error('Speech recognition error', event);
+    };
+}
+
+function toggleIcons() {
+    var input = document.getElementById('searchInput');
+    var settingsIcon = document.getElementById('settingsIcon');
+    var sendIcon = document.getElementById('sendIcon');
+    var micIcon = document.getElementById('micIcon');
+
+    if (input.value.trim().length > 0) {
+        sendIcon.style.display = 'inline';
+        settingsIcon.style.display = 'none';
+    } else {
+        sendIcon.style.display = 'none';
+        settingsIcon.style.display = 'inline';
+    }
+
+    micIcon.style.display = 'inline';
+}
+
+function togglePlaceholder() {
+    var input = document.getElementById('searchInput');
+    var placeholderText = document.getElementById('placeholderText');
+
+    if (input.value.trim().length > 0) {
+        placeholderText.style.display = 'none';
+    } else {
+        placeholderText.style.display = 'block';
+    }
+}
+
+function expandTextarea() {
+    var input = document.getElementById('searchInput');
+    input.style.height = '100px';
+}
+
+function shrinkTextarea() {
+    var input = document.getElementById('searchInput');
+    input.style.height = 'auto';
+    adjustInputHeight();
+}
+
+function toggleLogo() {
+    var logoIcon = document.getElementById('logoIcon');
+    logoIcon.style.display = logoIcon.style.display === 'none' ? 'inline' : 'none';
+}
+
+function hideSettingsIcon() {
+    var settingsIcon = document.getElementById('settingsIcon');
+    settingsIcon.style.display = 'none';
+}
+
+function showSettingsIcon() {
+    var settingsIcon = document.getElementById('settingsIcon');
+    var input = document.getElementById('searchInput');
+    if (input.value.trim().length === 0) {
+        settingsIcon.style.display = 'inline';
+    }
+}
+
+</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const uniqueContinueBtn = document.getElementById('uniqueContinueBtn');
+      const uniquePopup = document.getElementById('uniquePopup');
+      const uniqueOverlay = document.getElementById('uniqueOverlay');
+
+      const showUniquePopup = () => {
+        uniquePopup.classList.add('show');
+        uniqueOverlay.classList.add('show');
+      };
+
+      const hideUniquePopup = () => {
+        uniquePopup.classList.remove('show');
+        uniqueOverlay.classList.remove('show');
+      };
+
+      uniqueContinueBtn.addEventListener('click', hideUniquePopup);
+
+
+      showUniquePopup();
+    });
+  </script>
+  <!-------------------------- search bar script start here  -------------------------->
+  <script>
+    function adjustInputHeight() {
+      var input = document.getElementById('searchInput');
+      input.style.height = 'auto';
+      input.style.height = (input.scrollHeight) + 'px';
+    }
+
+    function startSpeechRecognition() {
+      var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+      var recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      recognition.start();
+
+      recognition.onresult = function (event) {
+        var transcript = event.results[0][0].transcript;
+        document.getElementById('searchInput').value = transcript;
+        adjustInputHeight();
+        toggleIcons();
+        togglePlaceholder();
+        expandTextarea(); 
+      };
+
+      recognition.onspeechend = function () {
+        recognition.stop();
+      };
+
+      recognition.onerror = function (event) {
+        console.error('Speech recognition error', event);
+      };
+    }
+
+    function toggleIcons() {
+      var input = document.getElementById('searchInput');
+      var settingsIcon = document.getElementById('settingsIcon');
+      var sendIcon = document.getElementById('sendIcon');
+      var micIcon = document.getElementById('micIcon');
+
+      if (input.value.trim().length > 0) {
+        sendIcon.style.display = 'inline';
+        settingsIcon.style.display = 'none';
+      } else {
+        sendIcon.style.display = 'none';
+        settingsIcon.style.display = 'inline';
+      }
+
+      micIcon.style.display = 'inline';
+    }
+
+    function togglePlaceholder() {
+      var input = document.getElementById('searchInput');
+      var placeholderText = document.getElementById('placeholderText');
+
+      if (input.value.trim().length > 0) {
+        placeholderText.style.display = 'none';
+      } else {
+        placeholderText.style.display = 'block';
+      }
+    }
+
+    function expandTextarea() {
+      var input = document.getElementById('searchInput');
+      input.style.height = '100px'; // Increase the height when focused
+    }
+
+    function shrinkTextarea() {
+      var input = document.getElementById('searchInput');
+      input.style.height = 'auto'; // Revert to auto height when not focused
+      adjustInputHeight(); // Adjust height based on content
+    }
+
+    function toggleLogo() {
+      var logoIcon = document.getElementById('logoIcon');
+      logoIcon.style.display = logoIcon.style.display === 'none' ? 'inline' : 'none';
+    }
+
+    function hideSettingsIcon() {
+      var settingsIcon = document.getElementById('settingsIcon');
+      settingsIcon.style.display = 'none';
+    }
+
+    function showSettingsIcon() {
+      var settingsIcon = document.getElementById('settingsIcon');
+      var input = document.getElementById('searchInput');
+      if (input.value.trim().length === 0) {
+        settingsIcon.style.display = 'inline';
+      }
+    }
+  </script>
+
+  <!-------------------------- search bar script end here  -------------------------->
+  <!-------------------------- login and signup popup script start here  -------------------------->
+
+
+  <script>
+    const closePopupBtn = document.getElementById('closePopupBtn');
+    const signUpBtn = document.getElementById('signUpBtn');
+    const loginBtn = document.getElementById('loginBtn');
+    const popup = document.getElementById('popup');
+    const overlay = document.getElementById('overlay');
+
+    document.querySelectorAll('.nav-item').forEach(item => {
+      item.addEventListener('click', () => {
+        popup.classList.add('show');
+        overlay.classList.add('show');
+      });
+    });
+
+    closePopupBtn.addEventListener('click', () => {
+      popup.classList.remove('show');
+      overlay.classList.remove('show');
+    });
+
+    overlay.addEventListener('click', () => {
+      popup.classList.remove('show');
+      overlay.classList.remove('show');
+    });
+
+    signUpBtn.addEventListener('click', () => {
+      popup.classList.remove('show');
+      overlay.classList.remove('show');
+    });
+
+    loginBtn.addEventListener('click', () => {
+      popup.classList.remove('show');
+      overlay.classList.remove('show');
+    });
+  </script>
+
+  <!-- login and signup popup end here  -->
+</body>
+
+</html>

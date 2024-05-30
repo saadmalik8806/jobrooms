@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jobrooms | Terms of uses</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/short-icon.png" />
+    <style>
+        /* Your existing CSS styles */
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            text-align: center;
+            margin-top: 4rem;
+            font-size: 34px;
+            font-weight: 700;
+        }
+        .navbar {
+  justify-content: flex-start;
+  position: unset;
+  padding: 0.5rem 1rem;
+  background: white;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 9.5rem !important;
+}
+.menu-link-wrapper {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem;
+}
+.menu-link {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-trigger-open .fa-bars {
+  display: none;
+}
+.menu-trigger-open .fa-times {
+  display: block;
+}
+.fa-times {
+  display: none;
+}
+a.nav-link {
+  color: #000;
+  padding: unset;
+}
+.sidebar-content {
+  overflow-y: auto;
+  max-height: calc(100vh - 150px);
+}
+.additional-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  /* margin-bottom: 1rem; */
+}
+.additional-info .icon {
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
+}
+.follow-us {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: unset !important;
+}
+.follow-us-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.follow-us-icons img {
+  margin: 0 0.5rem;
+  width: 22px;
+}
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+.offcanvas-collapse.open + .menu-overlay {
+  display: block;
+}
+.close-icon-wrapper {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  /* right: 1rem; */
+  cursor: pointer;
+  z-index: 1001;
+}
+.show-more-icon {
+  margin-left: 0.5rem;
+}
+    </style>
+</head>
+<body>
+    <!-- Main Content -->
+    <nav class="navbar">
+        <div class="d-flex align-items-center w-100">
+            <!-- Hamburger Icon -->
+            <button class="navbar-toggler menu-link-wrapper" type="button" data-toggle="offcanvas" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <div class="menu-link">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </button>
+            <!-- Profile and Notification Icons -->
+            <div class="ml-auto navbar-icons">
+                <span class="icon bell-icon nav-item"><img src="images/active.png" alt="Notification Icon"></span>
+                <span class="icon user-icon nav-item"><img src="images/profile-user.png" alt="User Icon"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-overlay"></div>
+  <div class="offcanvas-collapse" id="navbarNav">
+      <div class="close-icon-wrapper">
+          <i class="fas fa-bars"></i>
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+          <img src="images/Jobrooms-New-Logo-Without-R.png" width="90" height="40" alt="Jobrooms" height="50">
+      </div>
+      <div class="sidebar-content">
+          <ul class="navbar-nav mt-4">
+              <!-- Navbar Items -->
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html"><img src="images/Home.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Home </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Panic.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Panic </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Search-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Search </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Work-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Work </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Shop-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Shop</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Hire-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Hire</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Shopping-bag-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Sell</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/top-up.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Top-up</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Balance-r2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Balance</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/CallHistory-r2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Call History</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about-us.html"><img src="images/About.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Investors-2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Investors</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Newsroom-2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Newsroom</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Faqs.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> FAQs</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/ContactUs.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/RefundPolicy.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Refund Policy</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/PricacyPolicy.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/TermsOfUse.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Terms Of Use</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/ModernSlaveryStatement-2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Modern Slavery Statement</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Login.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Signup.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Signup</a>
+              </li>
+              <li class="" id="showMoreBtn">
+                  <a class="nav-link"><i class="fas fa-chevron-down show-more-icon"></i>Show more</a>
+              </li>
+          </ul>
+          <!-- New Icon and Text -->
+          <div class="mt-4 mb-4 ml-3">
+            <div class="additional-info">
+              <img src="images/globe--v1.png" alt="Additional Icon" class="icon">
+              <span style="color: #1a1666;">English (UK)</span>
+          </div>
+          <div class="additional-info">
+              <img src="images/sun.png" alt="Additional Icon" class="icon">
+              <span style="color: #1a1666;">Light Mode</span>
+          </div>
+          <div class="additional-info">
+            <img src="images/download.png" alt="Additional Icon" class="icon">
+            <span style="color: #1a1666;">Conversation Royalties</span>
+        </div>
+          <div class="additional-info">
+              <span style="color: #888;">United Kingdom<br>
+                  ©2024 – Jobrooms<br>
+                  All Right Reserved</span>
+          </div>
+          </div>
+      </div>
+      <!-- Follow Us Section -->
+      <div class="follow-us">
+          <p class="follow ml-4" style="text-align: left;">Follow Us</p>
+          <div class="follow-us-icons">
+              <img src="images/facebook.png" alt="Facebook" class="icon">
+              <img src="images/snap.png" alt="Instagram" class="icon">
+              <img src="images/twitter.png" alt="Twitter" class="icon">
+              <img src="images/linkdin.png" alt="LinkedIn" class="icon">
+              <img src="images/youtube.png" alt="YouTube" class="icon">
+              <img src="images/github-logo.png" alt="GitHub" class="icon">
+          </div>
+      </div>
+  </div>
+ 
+  <!-- Navbar start here -->
+  <nav class="navbar">
+      <div class="d-flex align-items-center w-100">
+          <!-- Hamburger Icon -->
+          <button class="navbar-toggler menu-link-wrapper" type="button" data-toggle="offcanvas" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <div class="menu-link">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </button>
+          <!-- Profile and Notification Icons -->
+          <div class="ml-auto navbar-icons">
+              <span class="icon bell-icon nav-item"><img src="images/active.png" alt="Notification Icon"></span>
+              <span class="icon user-icon nav-item"><img src="images/profile-user.png" alt="User Icon"></span>
+          </div>
+      </div>
+  </nav>
+
+  <div class="container content">
+    <div class="row">
+        <div class="col-12">
+            <h1>Terms Of Use</h1>
+            <h2><strong>Important legal notice</strong></h2>
+            <p>Attention: This legal notice applies to the entire contents of the Website under the domain name  and to any correspondence between us and you. Please read these terms carefully before using the Website. Using the Website indicates that you accept these terms regardless of whether or not you choose to register with us. If you do not accept these terms, do not use the Website.</p>
+        
+            <h2><strong>1. Introduction</strong></h2>
+            <p>1.1 You may access most areas of the Website without registering your details with us. Certain areas of the Website are only open to you if you register.</p>
+            <p>1.2 By accessing any part of the Website, you shall be deemed to have accepted this legal notice in full. If you do not accept this legal notice in full, you must leave the Website immediately.</p>
+            <p>1.3 The Company may revise this legal notice at any time by updating this posting. You should check the Website from time to time to review the then current legal notice, because it is binding on you. Certain provisions of this legal notice may be superseded by expressly designated legal notices or terms located on particular pages at the Website.</p>
+
+            <h2><strong>2. Licence</strong></h2>
+            <p>2.1 You are permitted to print and download extracts from the Website [for your own use] on the following basis: </p>
+            <p>(a) no documents or related graphics on the Website are modified in any way;</p>
+            <p>(b) no graphics on the Website are used separately from the corresponding text; and</p>
+            <p>(c) the Company ’s copyright and trade mark notices and this permission notice appear in all copies.</p>
+            <p>2.2 Unless otherwise stated, the copyright and other intellectual property rights in all material on the Website (including without limitation photographs and graphical images) are owned by the Company or its licensors. For the purposes of this legal notice, any use of extracts from the Website other than in accordance with clause 2.1 for any purpose is prohibited. If you breach any of the terms in this legal notice, your permission to use the Website automatically terminates and you must immediately destroy any downloaded or printed extracts from the Website.</p>
+            <p>2.3 Subject to clause 2.1, no part of the Website may be reproduced or stored in any other website or included in any public or private electronic retrieval system or service without the Company ’s prior written permission.</p>
+            <p>2.4 Any rights not expressly granted in these terms are reserved.</p>
+
+
+            <h2><strong>3. Service access</strong></h2>
+            <p>3.1 While the Company endeavours to ensure that the Website is normally available 24 hours a day, the Company shall not be liable if for any reason the Website is unavailable at any time or for any period.</p>
+            <p>3.2 Access to the Website may be suspended temporarily and without notice in the case of system failure, maintenance or repair or for reasons beyond the Company ’s control.</p>
+
+            <h2><strong>4. Visitor material and conduct</strong></h2>
+            <p>4.1 Other than personally identifiable information, which is covered under our Privacy Policy, any material you transmit or post to the Website shall be considered non-confidential and non-proprietary. The Company shall have no obligations with respect to such material. The Company and its designees shall be free to copy, disclose, distribute, incorporate and otherwise use such material and all data, images, sounds, text and other things embodied therein for any and all commercial or non-commercial purposes.</p>
+            <p>4.2 You are prohibited from posting or transmitting to or from the Website any material:</p>
+            <p>(a) that is threatening, defamatory, obscene, indecent, seditious, offensive, pornographic, abusive, liable to incite racial hatred, discriminatory, menacing, scandalous, inflammatory, blasphemous, in breach of confidence, in breach of privacy or which may cause annoyance or inconvenience; or</p>
+            <p>(b) for which you have not obtained all necessary licences and/or approvals; or</p>
+            <p>(c) which constitutes or encourages conduct that would be considered a criminal offence, give rise to civil liability, or otherwise be contrary to the law of or infringe the rights of any third party, in any country in the world; or</p>
+            <p>(d) which is technically harmful (including, without limitation, computer viruses, logic bombs, Trojan horses, worms, harmful components, corrupted data or other malicious software or harmful data).</p>
+            <p>4.3 You may not misuse the Website (including, without limitation, by hacking).</p>
+            <p>4.4 The Company shall fully co-operate with any law enforcement authorities or court order requesting or directing the Company to disclose the identity or locate anyone posting any material in breach of clause 4.2 or clause 4.3.</p>
+            
+
+            <h2><strong>5. Links to and from other websites</strong></h2>
+            <p>5.1 Links to third party websites on the Website are provided solely for your convenience. If you use these links, you leave the Website. The Company has not reviewed all of these third party websites and does not control and is not responsible for these websites or their content or availability. The Company therefore does not endorse or make any representations about them, or any material found there, or any results that may be obtained from using them. If you decide to access any of the third party websites linked to the Website, you do so entirely at your own risk.</p>
+            <p>5.2 If you would like to link to the Website, you may only do so on the basis that you link to, but do not replicate, the home page of the Website, and subject to the following conditions:</p>
+            <p>(a) you do not remove, distort or otherwise alter the size or appearance of the JOBROOMS logo;</p>
+            <p>(b) you do not create a frame or any other browser or border environment around the Website;</p>
+            <p>(c) you do not in any way imply that the Company is endorsing any products or services other than its own;</p>
+            <p>(d) you do not misrepresent your relationship with the Company nor present any other false information about the Company;</p>
+            <p>(e) you do not otherwise use any JOBROOMS trademarks displayed on the Website without express written permission from the Company;</p>
+            <p>(f) you do not link from a website that is not owned by you; and </p>
+            <p>(g) your website does not contain content that is distasteful, offensive or controversial, infringes any intellectual property rights or other rights of any other person or otherwise does not comply with all applicable laws and regulations.</p>
+       
+       
+            <h2><strong>6. Registration</strong></h2>
+            <p>6.1 Each registration is for a single user only. The Company does not permit you to share your user name and password with any other person nor with multiple users on a network</p>
+            <p>6.2 Responsibility for the security of any passwords issued rests with you.</p>
+
+
+            <h2><strong>7. Disclaimer</strong></h2>
+            <p>7.1 While the Company endeavours to ensure that the information on the Website is correct, the Company does not warrant the accuracy and completeness of the material on the Website. The Company may make changes to the material on the Website, or to the products and prices described in it, at any time without notice. The material on the Website may be out of date, and the Company makes no commitment to update such material.</p>
+            <p>7.2 The material on the Website is provided “as is ”, without any conditions, warranties or other terms of any kind. Accordingly, to the maximum extent permitted by law, the Company provides you with the Website on the basis that the Company excludes all representations, warranties, conditions and other terms (including, without limitation, the conditions implied by law of satisfactory quality, fitness for purpose and the use of reasonable care and skill which, but for this legal notice, might have effect in relation to the Website.</p>
+
+
+            <h2><strong>8. Liability</strong></h2>
+            <p>8.1 The Company, any other party (whether or not involved in creating, producing, maintaining or delivering the Website), and any of the Company ’s group companies and the officers, directors, employees, shareholders or agents of any of them, exclude all liability and responsibility for any amount or kind of loss or damage that may result to you or a third party (including without limitation, any direct, indirect, punitive or consequential loss or damages, or any loss of income, profits, goodwill, data, contracts, use of money, or loss or damages arising from or connected in any way to business interruption, and whether in tort (including without limitation negligence), contract or otherwise) in connection with the Website in any way or in connection with the use, inability to use or the results of use of the Website, any websites linked to the Website or the material on such websites, including but not limited to loss or damage due to viruses that may infect your computer equipment, software, data or other property on account of your access to, use of, or browsing the Website or your downloading of any material from the Website or any websites linked to the Website.</p>
+            <p>8.2 Nothing in this legal notice shall exclude or limit the Company ’s liability for: </p>
+            <p>(a) death or personal injury caused by negligence</p>
+            <p>(b) fraud; or</p>
+            <p>(c) misrepresentation as to a fundamental matter; or</p>
+            <p>(d) any liability which cannot be excluded or limited under applicable law.</p>
+            <p>8.3 If your use of material on the Website results in the need for servicing, repair or correction of equipment, software or data, you assume all costs thereof.</p>
+            
+
+
+
+            <h2><strong>9. Refunds</strong></h2>
+<p>Service fees are non-refundable; however Jobrooms will review each request subjectively and will reserve the right to issue or deny a refund. If you received a faulty, damaged, or simply not the right product, email info@xyz.com as soon as you receive it and include pictures to support your description. You can still return the product to us and we will endeavour to repair or replace it. If we cannot offer a repair/replacement, we will process a refund. All products must be returned unused, in the original packaging with intact tags. Incomplete, torn, worn, soiled or anything we may believe has been used will not be accepted. Please ensure we have received your returns within 14 days after delivery. Returns that reach us late will be sent back and no refund will be processed.</p>
+
+
+<h2><strong>10. Billing disputes</strong></h2>
+<p>Each customer agrees to provide Jobrooms 30 days to attempt settlement of any billing dispute before disputing with any third-party credit/debit card company or bank. Should the company receive a chargeback from a third-party credit/debit card company or bank on the customer’s behalf before it has been given a chance to resolve the issue, the company has the right to charge the customer for its time spent in resolving such disputes and any associated fees incurred by the company. Regardless of the outcome of the chargeback, the company retains the right to collect any services or fees that are due. Jobrooms may submit any disputed amounts to a collection agency. Once a chargeback has been received, the company has the right to suspend the account until the matter is resolved.</p>
+
+<h2><strong>11. Governing law and jurisdiction</strong></h2>
+<p>Disputes arising in connection with this legal notice shall be subject to the exclusive jurisdiction of the courts of the United Kingdom.</p>
+            
+
+        </div>
+    </div>
+</div>
+
+    <!-- Your existing JavaScript and Bootstrap JS links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-link-wrapper').on('click', function () {
+                $('.menu-link').toggleClass('menu-trigger-open');
+                $('.offcanvas-collapse').toggleClass('open');
+                $('.menu-overlay').toggle();
+            });
+            $('.menu-overlay, .fa-times').on('click', function () {
+                $('.offcanvas-collapse').removeClass('open');
+                $('.menu-link').removeClass('menu-trigger-open');
+                $('.menu-overlay').hide();
+            });
+    
+            var $navItems = $('.navbar-nav .nav-item');
+            var $showMoreBtn = $('#showMoreBtn');
+            var numToShow = 5;
+    
+            $navItems.slice(numToShow, -1).hide();
+    
+            $showMoreBtn.on('click', function () {
+                var isShowingMore = $navItems.slice(numToShow, -1).is(':visible');
+                $navItems.slice(numToShow, -1).toggle();
+                $showMoreBtn.find('a').html(isShowingMore ? '<i class="fas fa-chevron-down show-more-icon"></i>Show more' : '<i class="fas fa-chevron-up show-more-icon"></i>Show less');
+                if (!isShowingMore) {
+                    $('html, body').animate({
+                        scrollTop: $showMoreBtn.offset().top
+                    }, 500);
+                }
+            });
+    
+            $navItems.on('click', function () {
+                $navItems.removeClass('hover-effect');
+                $(this).addClass('hover-effect');
+            });
+        });
+    </script>
+</body>
+</html>

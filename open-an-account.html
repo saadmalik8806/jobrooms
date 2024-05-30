@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobrooms | Open an account</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-8XydXTYCflRL/Ci33UhsM1a3uVXB7tfeTcaz3vLRJm+WM2h37C5apmS13FTGGQ+N"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/short-icon.png" />
+  <style>
+   .navbar {
+  justify-content: flex-start;
+  position: unset;
+  padding: 0.5rem 1rem;
+  background: white;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 9.5rem !important;
+}
+.menu-link-wrapper {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem;
+}
+.menu-link {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-trigger-open .fa-bars {
+  display: none;
+}
+.menu-trigger-open .fa-times {
+  display: block;
+}
+.fa-times {
+  display: none;
+}
+a.nav-link {
+  color: #000;
+  padding: unset;
+}
+.sidebar-content {
+  overflow-y: auto;
+  max-height: calc(100vh - 150px);
+}
+.additional-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  /* margin-bottom: 1rem; */
+}
+.additional-info .icon {
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
+}
+li.nav-item {
+  padding: -1px;
+}
+i.fas.fa-chevron-down.show-more-icon{
+  margin: 1rem !important;
+}
+i.fas.fa-chevron-up.show-more-icon{
+  margin: 1rem !important;
+}
+.follow-us {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  /* background: white; */
+}
+.follow-us-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.follow-us-icons img {
+  margin: 0 0.5rem;
+  width: 22px;
+}
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+.offcanvas-collapse.open + .menu-overlay {
+  display: block;
+}
+.close-icon-wrapper {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  /* right: 1rem; */
+  cursor: pointer;
+  z-index: 1001;
+}
+.show-more-icon {
+  margin-left: 0.5rem;
+}
+.footer-line {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  /* background-color: #f8f9fa; */
+  padding: 10px 0;
+  font-size: 0.9rem;
+  /* border-top: 1px solid #dee2e6; */
+}
+.gradient-text {
+      background: linear-gradient(74deg, rgb(66, 133, 244), rgb(155, 114, 203), rgb(217, 101, 112));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+  
+    .text-line {
+      font-size: 3rem;
+      margin: 4px;
+      margin-top: 1rem;
+    }
+  
+    .elementor-heading-title {
+      text-align: left;
+      margin-top: 3rem;
+    }
+  
+    p {
+      text-align: left;
+    }
+  
+    h1 {
+      font-size: 23px;
+      text-align: left;
+      padding: 13px 19px 18px 57px;
+    }
+
+    /* Button Styles */
+    .btn-custom {
+      width: 352px;
+      border-color: #000;
+      height: 120px;
+      border-radius: 0px 2px 2px 2px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      transition: all 0.3s ease; /* Added transition for smooth effect */
+      background-color: transparent; /* Set initial background color */
+    }
+
+    .btn-custom:hover {
+      background-color: #000; /* Change background color on hover */
+      color: #fff; /* Change text color on hover */
+    }
+
+    .btn-custom:hover img {
+      filter: invert(1); /* Invert the icon color on hover */
+    }
+
+    .btn-custom img {
+      max-width: 40px;
+      max-height: 40px;
+      margin-bottom: 10px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 576px) {
+      h2.elementor-heading-title {
+        font-size: 1.8rem;
+      }
+
+      .text-line {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar start here -->
+  <nav class="navbar">
+    <div class="d-flex align-items-center w-100">
+      <!-- Hamburger Icon -->
+      <button class="navbar-toggler menu-link-wrapper" type="button" data-toggle="offcanvas" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <div class="menu-link">
+          <i class="fas fa-bars"></i>
+        </div>
+      </button>
+      <!-- Profile and Notification Icons -->
+      <div class="ml-auto navbar-icons">
+        <span class="icon bell-icon nav-item"><img src="images/active.png" alt="Notification Icon"></span>
+        <span class="icon user-icon nav-item"><img src="images/profile-user.png" alt="User Icon"></span>
+      </div>
+    </div>
+  </nav>
+  <div class="menu-overlay"></div>
+  <div class="offcanvas-collapse" id="navbarNav">
+      <div class="close-icon-wrapper">
+          <i class="fas fa-bars"></i>
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+          <img src="images/Jobrooms-New-Logo-Without-R.png" width="100" height="40" alt="Jobrooms" height="50">
+      </div>
+      <div class="sidebar-content">
+          <ul class="navbar-nav mt-4">
+              <!-- Navbar Items -->
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html"><img src="images/Home.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Home </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Panic.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Panic </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Search-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Search </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Work-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Work </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Shop-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Shop</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Hire-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Hire</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Shopping-bag-r.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Sell</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/top-up.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Top-up</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Balance-r2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Balance</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/CallHistory-r2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Call History</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about-us.html"><img src="images/About.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Investors-2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Investors</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Newsroom-2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Newsroom</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Faqs.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> FAQs</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/ContactUs.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/RefundPolicy.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Refund Policy</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/PricacyPolicy.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/TermsOfUse.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Terms Of Use</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/ModernSlaveryStatement-2.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Modern Slavery Statement</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Login.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><img src="images/Signup.png" width="20" height="20" alt="Show more" class="mr-2 m-3"> Signup</a>
+              </li>
+              <li id="showMoreBtn">
+                  <a class="nav-link"><i class="fas fa-chevron-down show-more-icon"></i>Show more</a>
+              </li>
+          </ul>
+          <!-- New Icon and Text -->
+          <div class="mt-4 mb-4 ml-3">
+            <div class="additional-info">
+              <img src="images/globe--v1.png" alt="Additional Icon" class="icon">
+              <span style="color: #1a1666;">English (UK)</span>
+          </div>
+          <div class="additional-info">
+              <img src="images/sun.png" alt="Additional Icon" class="icon">
+              <span style="color: #1a1666;">Light Mode</span>
+          </div>
+          <div class="additional-info">
+            <img src="images/download.png" alt="Additional Icon" class="icon">
+            <span style="color: #1a1666;">Conversation Royalties</span>
+        </div>
+          <div class="additional-info">
+              <span style="color: #888;">United Kingdom<br>
+                  ©2024 – Jobrooms<br>
+                  All Right Reserved</span>
+          </div>
+          </div>
+         
+      </div>
+      <!-- Follow Us Section -->
+      <div class="follow-us">
+          <p class="follow ml-4" style="text-align: left;">Follow Us</p>
+          <div class="follow-us-icons">
+              <img src="images/facebook.png" alt="Facebook" class="icon">
+              <img src="images/snap.png" alt="Instagram" class="icon">
+              <img src="images/twitter.png" alt="Twitter" class="icon">
+              <img src="images/linkdin.png" alt="LinkedIn" class="icon">
+              <img src="images/youtube.png" alt="YouTube" class="icon">
+              <img src="images/github-logo.png" alt="GitHub" class="icon">
+          </div>
+      </div>
+  </div>
+ 
+  <!-- Navbar start here -->
+  <nav class="navbar">
+      <div class="d-flex align-items-center w-100">
+          <!-- Hamburger Icon -->
+          <button class="navbar-toggler menu-link-wrapper" type="button" data-toggle="offcanvas" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <div class="menu-link">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </button>
+          <!-- Profile and Notification Icons -->
+          <div class="ml-auto navbar-icons">
+              <span class="icon bell-icon nav-item"><img src="images/active.png" alt="Notification Icon"></span>
+              <span class="icon user-icon nav-item"><img src="images/profile-user.png" alt="User Icon"></span>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Your existing HTML content goes here -->
+  
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <h2 class="elementor-heading-title elementor-size-default rainbow-text">
+          <div class="text-line" style="color: #BBCDD7;;">Signup For A</div>
+          <div class="gradient-text text-line">JOBROOMS Account</div>
+        </h2>
+        <p>Welcome to the future of convenience, where your diverse needs are met with just one platform! JOBROOMS recognizes the multifaceted lives we lead and offers three account signup options to cater to everyone effectively. Whether you ’re seeking to master a new skill, tackle a challenging project, gain valuable insights, or simply conquer your to-do list by ordering a quick snack or other essentials online, there ’s an option tailored to your specific goals. From novice job seekers to ambitious entrepreneurs aiming to generate instant income, JOBROOMS helps you to explore opportunities, connect with experts instantly, land potential clients, hire highly vetted talent, and even fulfil those everyday needs with ease. Start your journey today and unlock the full potential of convenience!</p>
+      </div>
+    </div>
+    <div class="row mt-3 justify-content-center">
+      <div class="">
+        <button type="button" class="btn btn-custom">
+          <img src="images/Login.png" style="color: #000;" width="30" height="30" alt="Home Icon">
+          <strong>Partial Access Account</strong>
+        </button>
+      </div>
+      <div class="">
+        <button type="button" class="btn btn-custom">
+            <img src="images/icons8-test-account-961.png" width="50" height="50" style="filter: invert(100%);" alt="Mail Icon">
+            <strong>Personal Account</strong> 
+          </button>
+          
+      </div>
+      <div class="">
+        <button type="button" class="btn btn-custom">
+          <img src="images/Work-r.png" width="30" height="30" alt="Info Icon">
+          <strong>Business Account</strong>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap and Font Awesome JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-7r+u/xakMPOi4KoYrAsPsVqbIv/C0JY4TkfqejDAHm1MELh/Td/IjXa4gSn/8LHi"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!-- Your existing scripts -->
+  <script>
+    $(document).ready(function () {
+        $('.menu-link-wrapper').on('click', function () {
+            $('.menu-link').toggleClass('menu-trigger-open');
+            $('.offcanvas-collapse').toggleClass('open');
+            $('.menu-overlay').toggle();
+        });
+        $('.menu-overlay, .fa-times').on('click', function () {
+            $('.offcanvas-collapse').removeClass('open');
+            $('.menu-link').removeClass('menu-trigger-open');
+            $('.menu-overlay').hide();
+        });
+
+        var $navItems = $('.navbar-nav .nav-item');
+        var $showMoreBtn = $('#showMoreBtn');
+        var numToShow = 5;
+
+        $navItems.slice(numToShow, -1).hide();
+
+        $showMoreBtn.on('click', function () {
+            var isShowingMore = $navItems.slice(numToShow, -1).is(':visible');
+            $navItems.slice(numToShow, -1).toggle();
+            $showMoreBtn.find('a').html(isShowingMore ? '<i class="fas fa-chevron-down show-more-icon"></i>Show more' : '<i class="fas fa-chevron-up show-more-icon"></i>Show less');
+            if (!isShowingMore) {
+                $('html, body').animate({
+                    scrollTop: $showMoreBtn.offset().top
+                }, 500);
+            }
+        });
+
+        $navItems.on('click', function () {
+            $navItems.removeClass('hover-effect');
+            $(this).addClass('hover-effect');
+        });
+    });
+</script>
+</body>
+
+</html>
