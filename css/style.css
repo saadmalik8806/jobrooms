@@ -79,7 +79,7 @@ i.fas.fa-chevron-up.show-more-icon{
   margin: 1rem !important;
 }
 .follow-us {
-  position: unset !important;
+  /* position: unset !important; */
   bottom: 1.2rem;
   left: 0;
   width: 100%;
