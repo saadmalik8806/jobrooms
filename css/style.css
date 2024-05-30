@@ -420,7 +420,7 @@ ul.navbar-nav.mt-4{
   padding-right: 1rem;
   padding-left: 1rem;
   overflow-y: auto;
-  background-color: #f8f9fa;
+  background-color: #fff !important;
   transition: transform .3s ease-in-out;
   transform: translateX(-100%);
 }
@@ -651,26 +651,19 @@ img.send-search {
 /*------------------------  search bar css code end here ------------------------  */
 
 /* ------------------------ login signup popup start here ------------------------  */
-.buttons-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
 }
 
-.open-popup-btn {
-  padding: 2px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: transparent;
-  color: #000;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-}
-
-.open-popup-btn:hover {
-  /* background-color: rgba(0, 0, 0, 0.1); */
+.overlay.show {
+  display: block;
 }
 
 .popup {
@@ -694,220 +687,32 @@ img.send-search {
   display: block;
 }
 
-/* Close button */
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  font-size: 20px;
-  color: #000;
-}
-
-/* Overlay background */
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 999;
-}
-
-/* Overlay visible class */
-.overlay.show {
-  display: block;
-}
-
-/* Styles for the popup content */
-.popup h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.popup .content {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.popup .content p {
-  margin-bottom: 10px;
-}
-
-.popup .content input {
-  margin-bottom: 10px;
-}
-
-.popup .action-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.popup .action-buttons button {
-  width: 100%;
-  padding: 12px 24px;
-  margin: 10px 0;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  background-color: #007bff;
-  transition: background-color 0.3s ease;
+.buttons-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.popup .action-buttons button:hover {
-  background-color: #0056b3;
-}
-
-.popup .action-buttons .github-btn {
-  background-color: #333;
-}
-
-.popup .content input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-.popup .content a {
-  color: #007bff;
+.open-popup-btn {
+  padding: 2px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
   text-decoration: none;
 }
 
-.popup .astronaut-img {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 80px;
-  height: auto;
+.open-popup-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.popup .action-buttons .icon {
-  margin-right: 10px;
-}
-
-/* New style for top center icon */
-.popup .top-center-icon {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 80px;
-  background-color: white;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.popup .top-center-icon img {
-  width: 40px;
-  height: 40px;
-}
-
-/* Separator */
 .separator {
   height: 20px;
   border-left: 1px solid #000;
   margin: 0 10px;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-  .popup {
-      width: 80%;
-      padding: 15px;
-  }
-
-  .popup h2 {
-      font-size: 18px;
-  }
-
-  .popup .tab-container button {
-      font-size: 14px;
-  }
-
-  .popup .content p {
-      font-size: 14px;
-  }
-
-  .popup .action-buttons button {
-      padding: 8px 15px;
-      font-size: 14px;
-  }
-
-  .popup .astronaut-img {
-      width: 60px;
-  }
-
-  .popup .top-center-icon {
-      width: 60px;
-      height: 60px;
-  }
-
-  .popup .top-center-icon img {
-      width: 30px;
-      height: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  .popup {
-      width: 90%;
-      padding: 10px;
-  }
-
-  .popup h2 {
-      font-size: 16px;
-  }
-
-  .popup .tab-container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .popup .tab-container button {
-      font-size: 12px;
-      margin-bottom: 10px;
-  }
-
-  .popup .content p {
-      font-size: 12px;
-  }
-
-  .popup .action-buttons button {
-      padding: 6px 10px;
-      font-size: 12px;
-  }
-
-  .popup .astronaut-img {
-      width: 50px;
-  }
-
-  .popup .top-center-icon {
-      width: 50px;
-      height: 50px;
-  }
-
-  .popup .top-center-icon img {
-      width: 25px;
-      height: 25px;
-  }
-
-  /* Adjust button width for smaller screens */
-  .popup .action-buttons button {
-      width: 80%;
-      padding: 10px 20px;
-  }
 }
 
 /*------------------------  login and signup popup end here------------------------   */
@@ -1173,6 +978,9 @@ img.send-search {
     font-size: 16px;
     margin-right: 7.5rem;
   }
+}
+.col-last-text {
+  margin-top: -1rem;
 }
 /* ------------------------ body page cnter text css end here ------------------------  */
 /* ------------------------ preloader code start here ------------------------ */

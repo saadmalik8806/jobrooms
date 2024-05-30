@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Scrollbar</title>
+<style>
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px; /* Adjust the radius value as needed */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+</style>
+</head>
+<body>
+
+<div style="height: 500px; overflow-y: scroll;">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor massa id neque rutrum, sed varius lorem sodales. Cras at risus aliquet, varius ex sed, hendrerit lectus. Mauris tincidunt, sapien non vestibulum rutrum, dolor metus mattis massa, et cursus odio ligula sit amet libero.</p>
+  <!-- Add more content to make scrollbar visible -->
+</div>
+
+</body>
+</html>

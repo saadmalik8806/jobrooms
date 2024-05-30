@@ -125,6 +125,12 @@ a.nav-link {
 .show-more-icon {
   margin-left: 0.5rem;
 }
+.menu-link .fas.fa-bars {
+    color: #878787;
+}
+.close-icon-wrapper{
+  color: #878787;
+}
     </style>
 </head>
 <body>
@@ -154,7 +160,29 @@ a.nav-link {
       <div class="d-flex justify-content-center mt-3" style="margin-right: 3rem;">
           <img src="images/Jobrooms-New-Logo-Without-R.png" width="90" height="40" alt="Jobrooms" height="50">
       </div>
-      <div class="sidebar-content">
+      <style>
+        /* Width */
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 10px; /* Adjust the radius value as needed */
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+        </style>
+      <div class="sidebar-content" style="height: 500px; overflow-y: scroll;">
           <ul class="navbar-nav mt-4">
               <!-- Navbar Items -->
               <li class="nav-item">
@@ -231,35 +259,38 @@ a.nav-link {
           <div class="mt-4 mb-4 ml-3">
             <div class="additional-info">
               <img src="images/globe--v1.png" alt="Additional Icon" class="icon">
-              <span style="color: #1a1666;">English (UK)</span>
+              <span style="color: #1a1666;"><strong>English (UK)</strong> </span>
           </div>
           <div class="additional-info">
               <img src="images/sun.png" alt="Additional Icon" class="icon">
-              <span style="color: #1a1666;">Light Mode</span>
+              <span style="color: #1a1666;"><strong>Light Mode</strong> </span>
           </div>
           <div class="additional-info">
             <img src="images/download.png" alt="Additional Icon" class="icon">
-            <span style="color: #1a1666;">Conversation Royalties</span>
+            <span style="color: #1a1666;"><strong>Conversation Royalties</strong> </span>
         </div>
           <div class="additional-info">
-              <span style="color: #888;">United Kingdom<br>
-                  ©2024 – Jobrooms<br>
-                  All Right Reserved</span>
+              <span style="color: #888;"><strong>United Kingdom</strong><br>
+                 <strong> ©2024 – Jobrooms</strong><br>
+                 <strong>All Right Reserved</strong> </span>
           </div>
           </div>
+         
       </div>
       <!-- Follow Us Section -->
       <div class="follow-us">
-          <p class="follow ml-4" style="text-align: left;">Follow Us</p>
-          <div class="follow-us-icons">
-              <img src="images/facebook.png" alt="Facebook" class="icon">
-              <img src="images/snap.png" alt="Instagram" class="icon">
-              <img src="images/twitter.png" alt="Twitter" class="icon">
-              <img src="images/linkdin.png" alt="LinkedIn" class="icon">
-              <img src="images/youtube.png" alt="YouTube" class="icon">
-              <img src="images/github-logo.png" alt="GitHub" class="icon">
-          </div>
-      </div>
+        <p class="follow ml-4" style="text-align: left; font-size: 0.8rem;">Follow Us</p>
+        <div class="follow-us-icons">
+           <a href="https://www.facebook.com/jobrooms"><img src="images/facebook.png" alt="Facebook" width="20" height="20" class="icon"></a> 
+            <a href="https://www.instagram.com/jobrooms/"><img src="images/instagram (2).png"  width="20" height="20"  alt="Facebook" class="icon"></a> 
+           <a href="https://x.com/i/flow/login?redirect_after_login=%2FJobroomsGlobal"><img src="images/twitter.png"  width="20" height="20"  alt="Twitter" class="icon"></a> 
+           <a href="https://www.linkedin.com/company/JobroomsGlobal/"><img src="images/linkdin.png"  width="20" height="20"  alt="LinkedIn" class="icon"></a> 
+           <a href="#"><img src="images/snap.png"  width="20" height="20"  alt="Instagram" class="icon"></a> 
+           <a href="https://tiktok.com/@JobroomsGlobal"><img src="images/tiktok.png"   width="20" height="20" alt="LinkedIn" class="icon"></a> 
+            
+          <a href="https://www.youtube.com/@Jobrooms"><img src="images/youtube.png"  width="20" height="20"  alt="YouTube" class="icon"></a>  
+        </div>
+    </div>
   </div>
  
   <!-- Navbar start here -->

@@ -155,6 +155,12 @@ a#loginBtn{
 .col-text4 {
     margin-top: -1rem;
 }
+.menu-link .fas.fa-bars {
+    color: #878787;
+}
+.close-icon-wrapper{
+  color: #878787;
+}
   </style>
 </head>
 <body>
@@ -179,15 +185,9 @@ a#loginBtn{
   </div>
 
 
-
-
   <div class="overlay" id="overlay"></div>
 
-  <!-- Popup container -->
-
-  <!-- Popup container -->
   <div class="popup" id="popup">
-    <button class="close-btn" id="closePopupBtn">&times;</button>
     <div class="content" style="margin-top: 2.5rem;">
       <p>Please create a free account or log in to your existing one to access this feature.</p>
     </div>
@@ -197,7 +197,6 @@ a#loginBtn{
       <a href="#" class="open-popup-btn" id="loginBtn">Login</a>
     </div>
   </div>
-
 
   <div class="container center-content">
     <!-- Logo Section -->
@@ -211,7 +210,29 @@ a#loginBtn{
       <div class="d-flex justify-content-center mt-3" style="margin-right: 3rem;">
           <img src="images/Jobrooms-New-Logo-Without-R.png" width="100" height="40"  alt="Jobrooms" height="50">
       </div>
-      <div class="sidebar-content">
+      <style>
+        /* Width */
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 10px; /* Adjust the radius value as needed */
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+        </style>
+      <div class="sidebar-content" style="height: 500px; overflow-y: scroll;">
           <ul class="navbar-nav mt-4">
               <!-- Navbar Items -->
               <li class="nav-item">
@@ -288,36 +309,36 @@ a#loginBtn{
           <div class="mt-4 mb-4 ml-3">
             <div class="additional-info">
               <img src="images/globe--v1.png" alt="Additional Icon" class="icon">
-              <span style="color: #1a1666;">English (UK)</span>
+              <span style="color: #1a1666;"><strong>English (UK)</strong> </span>
           </div>
           <div class="additional-info">
               <img src="images/sun.png" alt="Additional Icon" class="icon">
-              <span style="color: #1a1666;">Light Mode</span>
+              <span style="color: #1a1666;"><strong>Light Mode</strong> </span>
           </div>
           <div class="additional-info">
             <img src="images/download.png" alt="Additional Icon" class="icon">
-            <span style="color: #1a1666;">Conversation Royalties</span>
+            <span style="color: #1a1666;"><strong>Conversation Royalties</strong> </span>
         </div>
           <div class="additional-info">
-              <span style="color: #888;">United Kingdom<br>
-                  ©2024 – Jobrooms<br>
-                  All Right Reserved</span>
+              <span style="color: #888;"><strong>United Kingdom</strong><br>
+                 <strong> ©2024 – Jobrooms</strong><br>
+                 <strong>All Right Reserved</strong> </span>
           </div>
           </div>
          
       </div>
       <!-- Follow Us Section -->
       <div class="follow-us">
-          <p class="follow ml-4" style="text-align: left;">Follow Us</p>
+          <p class="follow ml-4" style="text-align: left; font-size: 0.8rem;">Follow Us</p>
           <div class="follow-us-icons">
-              <img src="images/facebook.png" alt="Facebook" width="20" height="20" class="icon">
-              <img src="images/instagram (2).png"  width="20" height="20"  alt="Facebook" class="icon">
-              <img src="images/twitter.png"  width="20" height="20"  alt="Twitter" class="icon">
-              <img src="images/linkdin.png"  width="20" height="20"  alt="LinkedIn" class="icon">
-              <img src="images/snap.png"  width="20" height="20"  alt="Instagram" class="icon">
-              <img src="images/tiktok.png"   width="20" height="20" alt="LinkedIn" class="icon">
+             <a href="https://www.facebook.com/jobrooms"><img src="images/facebook.png" alt="Facebook" width="20" height="20" class="icon"></a> 
+              <a href="https://www.instagram.com/jobrooms/"><img src="images/instagram (2).png"  width="20" height="20"  alt="Facebook" class="icon"></a> 
+             <a href="https://x.com/i/flow/login?redirect_after_login=%2FJobroomsGlobal"><img src="images/twitter.png"  width="20" height="20"  alt="Twitter" class="icon"></a> 
+             <a href="https://www.linkedin.com/company/JobroomsGlobal/"><img src="images/linkdin.png"  width="20" height="20"  alt="LinkedIn" class="icon"></a> 
+             <a href="#"><img src="images/snap.png"  width="20" height="20"  alt="Instagram" class="icon"></a> 
+             <a href="https://tiktok.com/@JobroomsGlobal"><img src="images/tiktok.png"   width="20" height="20" alt="LinkedIn" class="icon"></a> 
               
-              <img src="images/youtube.png"  width="20" height="20"  alt="YouTube" class="icon">
+            <a href="https://www.youtube.com/@Jobrooms"><img src="images/youtube.png"  width="20" height="20"  alt="YouTube" class="icon"></a>  
           </div>
       </div>
   </div>
@@ -358,37 +379,72 @@ a#loginBtn{
     <!-- Paragraph Section -->
     <div class="container">
       <div class="row justify-content-center mt-3">
-        <h2 class="text-center" style="color:#B7B8BC; font-size: 1.5rem;">Hello there, you can ask things like..</h2>
+        <h2 class="text-center hide-on-mobile" style="color:#B7B8BC; font-size: 1.5rem;">Hello there, you can ask things like..</h2>
         <div class="main-span">
-          <span class="red">I want to learn</span>
-          <span class="big">how to drive</span>
-          <span class="part3">, where do I start?</span>
-          <span class="part4">How do I file my</span>
-          <span class="part4_1">taxes?</span><br>
-          <div class="col-text4">
-            <span class="part5">My drainage</span>
-            <span class="part6">help me create a <span>spreadsheet</span> to track my budget</span><br>
+          <div class="text-content">
+            <span class="red">I want to learn</span>
+            <span class="big">how to drive</span>
+            <span class="part3">, where do I start?</span>
+            <span class="part4">How do I file my</span>
+            <span class="part4_1">taxes?</span><br>
+            <div class="col-text4">
+              <span class="part5">My drainage</span>
+              <span class="part6">help me create a <span>spreadsheet</span> to track my budget</span><br>
+            </div>
+            <div class="col-text3">
+              <span class="additional-text">is blocked, what should I do?</span>
+              <span class="bedtime">Can you tell me a bedtime story that will lull you to <span class="sleep">Sleep?</span><br></span>
+            </div>
+            <div class="col-text2">
+              <span class="computer">My HP Computer won't start,</span>
+              <span class="depressed">I'm feeling depressed and having <span class="suicidal">suicidal thoughts,</span> can you help?</span><br>
+            </div>
+            <div class="col-text">
+              <span class="red">what's wrong?</span>
+              <span class="workout">what's the best workout</span>
+              <span class="biryani">How do I cook delicious<span>chicken biryani</span><br></span>
+            </div>
+            <div class="col-last-text">
+              <span class="routing">routing for me to <span>build muscle?</span></span>
+              <span class="scratch">from scratch?</span>
+            </div>
           </div>
-          <div class="col-text3">
-            <span class="additional-text">is blocked, what should I do?</span>
-            <span class="bedtime">Can you tell me a bedtime story that will lull you to <span class="sleep">Sleep?</span><br></span>
-          </div>
-          <div class="col-text2">
-            <span class="computer">My HP Computer won't start,</span>
-            <span class="depressed">I'm feeling depressed and having <span class="suicidal">suicidal thoughts,</span> can you help?</span><br>
-          </div>
-          <div class="col-text">
-            <span class="red">what's wrong?</span>
-            <span class="workout">what's the best workout</span>
-            <span class="biryani">How do I cook delicious<span>chicken biryani</span><br></span>
-          </div>
-          <span class="routing">routing for me to <span>build muscle?</span></span>
-          <span class="scratch">from scratch?</span>
+          <img src="images/mobile-view-image.png" alt="Mobile View Image">
         </div>
         <p class="bottom-center">This Product Is Protected By A Robust Intellectual Property Portfolio Encompassing Pending Patents And Other Exclusive Rights.</p>
       </div>
     </div>
- 
+    <style>
+      .container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main-span {
+  text-align: center;
+}
+
+.main-span img {
+  display: none; /* Hide the image by default */
+}
+
+@media (max-width: 768px) {
+  .main-span .text-content {
+    display: none; /* Hide text on mobile */
+  }
+
+  .main-span img {
+    display: block; /* Show the image on mobile */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hide-on-mobile {
+    display: none; /* Hide the h2 tag on mobile */
+  }
+}
+    </style>
       
  
 <style>
@@ -564,37 +620,42 @@ a#loginBtn{
 
 
   <script>
-    const closePopupBtn = document.getElementById('closePopupBtn');
-    const signUpBtn = document.getElementById('signUpBtn');
-    const loginBtn = document.getElementById('loginBtn');
-    const popup = document.getElementById('popup');
-    const overlay = document.getElementById('overlay');
+    document.addEventListener('DOMContentLoaded', () => {
+      const signUpBtn = document.getElementById('signUpBtn');
+      const loginBtn = document.getElementById('loginBtn');
+      const popup = document.getElementById('popup');
+      const overlay = document.getElementById('overlay');
 
-    document.querySelectorAll('.nav-item').forEach(item => {
-      item.addEventListener('click', () => {
-        popup.classList.add('show');
-        overlay.classList.add('show');
+      // Show popup when any nav item is clicked
+      document.querySelectorAll('.nav-item').forEach(item => {
+        item.addEventListener('click', () => {
+          popup.classList.add('show');
+          overlay.classList.add('show');
+        });
       });
-    });
 
-    closePopupBtn.addEventListener('click', () => {
-      popup.classList.remove('show');
-      overlay.classList.remove('show');
-    });
+      // Close popup when clicking on sign up or login buttons
+      signUpBtn.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        popup.classList.remove('show');
+        overlay.classList.remove('show');
+      });
 
-    overlay.addEventListener('click', () => {
-      popup.classList.remove('show');
-      overlay.classList.remove('show');
-    });
+      loginBtn.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        popup.classList.remove('show');
+        overlay.classList.remove('show');
+      });
 
-    signUpBtn.addEventListener('click', () => {
-      popup.classList.remove('show');
-      overlay.classList.remove('show');
-    });
+      // Prevent clicks inside the popup from closing it
+      popup.addEventListener('click', (event) => {
+        event.stopPropagation();
+      });
 
-    loginBtn.addEventListener('click', () => {
-      popup.classList.remove('show');
-      overlay.classList.remove('show');
+      // Do not close popup when clicking on the overlay
+      overlay.addEventListener('click', (event) => {
+        event.stopPropagation();
+      });
     });
   </script>
 
