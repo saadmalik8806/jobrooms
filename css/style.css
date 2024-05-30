@@ -627,7 +627,7 @@ img.send-search {
 
   img.send-search,
   img.mic-search {
-    bottom: 8px;
+    /* bottom: 8px; */
   }
 
   img.mic-search {
